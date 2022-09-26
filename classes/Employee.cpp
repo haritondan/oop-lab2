@@ -1,3 +1,5 @@
+#pragma once
+#include <iostream>
 #include <string>
 #include <vector>
 #include "Table.cpp"
@@ -17,7 +19,10 @@ public:
     };
     void addTables(Table* tables){
         this->tables.push_back(tables);
+        cout << "Waiter " << this->name << " has got the table " << this->tables.back()->getNumber() <<  "\n" <<endl;
+    
     };
+
 };
 
 

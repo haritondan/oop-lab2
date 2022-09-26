@@ -1,3 +1,4 @@
+#pragma once
 #include <vector>
 #include "Table.cpp"
 #include "Employee.cpp"
@@ -16,7 +17,7 @@ public:
         for (int i = 0; i < 12; i++)
         {
             tables.push_back(new Table(i));
-            waiters[i/3]->addTables(tables.back());
+            waiters[i/4]->addTables(tables.back());
         }
         
     };

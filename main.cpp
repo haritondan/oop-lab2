@@ -3,5 +3,6 @@
 
 int main() {
     Admin admin1;
+    printf("");
 
 }
