@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+#include "Table.cpp"
 
 using namespace std;
 
@@ -8,12 +9,14 @@ class Employee
 private:
     string name;
     int age;
-    vector<int> tables;
+    vector<Table*> tables;
 public:
-    Employee(string name, int age, vector<int> tables){
+    Employee(string name, int age){
         this->name = name;
         this->age = age;
-        this->tables = tables;
+    };
+    void addTables(Table* tables){
+        this->tables.push_back(tables);
     };
 };
 
