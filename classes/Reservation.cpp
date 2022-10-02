@@ -38,6 +38,7 @@ public:
     }
 
     void reservList(){
+        cout << "\nReservation's List" << endl;
         for (int i = 0; i < reserv.size(); i++)
         {
             cout << "Reserved table for " << reserv[i]->getClient() << " at " << reserv[i]->getTime() << " " << reserv[i]->getTimeS() << endl;
