@@ -7,6 +7,7 @@
 #include "./classes/Reservation.cpp"
 #include "./classes/Manager.cpp"
 #include "./classes/Vip.cpp"
+#include "./classes/Kitchen.cpp"
 
 using namespace std;
 
@@ -19,6 +20,7 @@ int main()
    Reservation rev;
    Manager man("Dan");
    Vip vip;
+   Kitchen kit;
    int ch;
    do
    {
@@ -53,7 +55,7 @@ int main()
 
          break;
       case 6:
-
+         kit.showKitchen();
          break;
       case 7:
          vip.showvip();
