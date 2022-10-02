@@ -32,8 +32,6 @@ public:
         return this->table;
     };
 
-    void employeeHello() {
-        cout << "My name is " << this->name << ". I will be your waiter today." << endl;
-    }
+    
     
 };

@@ -1,16 +1,24 @@
 #include <iostream>
 #include "./classes/Admin.cpp"
 #include "./classes/Menu.cpp"
+#include "./classes/Sushi.cpp"
+#include "./classes/Bar.cpp"
 #include "./classes/Employee.cpp"
 #include "./classes/Reservation.cpp"
+#include "./classes/Manager.cpp"
+#include "./classes/Vip.cpp"
 
 using namespace std;
 
 int main()
 {
    Menu menu;
+   Sushi smenu;
+   Bar bmenu;
    Admin admin;
    Reservation rev;
+   Manager man("Dan");
+   Vip vip;
    int ch;
    do
    {
@@ -32,15 +40,14 @@ int main()
       case 1:
          admin.listWaiters();
          break;
-
       case 2:
          menu.showMenu();
          break;
       case 3:
-         
+         smenu.showSushi();
          break;
       case 4:
-
+         bmenu.showBar();
          break;
       case 5:
 
@@ -49,10 +56,15 @@ int main()
 
          break;
       case 7:
-
+         vip.showvip();
          break;
       case 8:
          rev.reservList();
+         break;
+      case 9:
+         break;
+      case 10:
+         man.callManager();
          break;
       case 0:
          return 0;
