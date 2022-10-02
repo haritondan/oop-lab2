@@ -22,7 +22,7 @@ public:
         cout << "Waiters List: " << endl;
         for (int i = 0; i < waiters.size(); i++)
         {
-          cout << waiters[i]->getName() << "is " << waiters[i]->getAge() << "years old and has the table " << waiters[i]->getTable() << endl;
+          cout << waiters[i]->getName() << "is " << waiters[i]->getAge() << " years old and has the table " << waiters[i]->getTable() << endl;
         }
         
     }

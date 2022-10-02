@@ -8,6 +8,8 @@
 #include "./classes/Manager.cpp"
 #include "./classes/Vip.cpp"
 #include "./classes/Kitchen.cpp"
+#include "./classes/Stock.cpp"
+#include "./classes/Delivery.cpp"
 
 using namespace std;
 
@@ -21,6 +23,8 @@ int main()
    Manager man("Dan");
    Vip vip;
    Kitchen kit;
+   Stock stock;
+   Delivery del;
    int ch;
    do
    {
@@ -34,6 +38,7 @@ int main()
       cout << "\nEnter 8 to see the Reservation List";
       cout << "\nEnter 9 to see the Stock Levels";
       cout << "\nEnter 10 to call up for a Manager";
+      cout << "\nEnter 0 to exit";
       cout << "\nEnter your choice " << endl;
       cin >> ch;
 
@@ -52,7 +57,7 @@ int main()
          bmenu.showBar();
          break;
       case 5:
-
+         del.showDelmenu();
          break;
       case 6:
          kit.showKitchen();
@@ -64,6 +69,7 @@ int main()
          rev.reservList();
          break;
       case 9:
+         stock.stockLevels();
          break;
       case 10:
          man.callManager();
