@@ -16,4 +16,4 @@ We have here 10 classes(check the folder classes):
 
 Every class was implemented with the idea of encapsulation as the main purpose. The system and every entity can be reworked into doing a better job, keeping track of multiple thing and implementing new rules will be very much appreciated. But that was not the purpose of our laboratory work, so I kept the system on a basic level.
 
-![alt text](/images/unknown.png)
+![meme](/images/unknown.png)
