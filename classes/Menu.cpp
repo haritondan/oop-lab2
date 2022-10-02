@@ -1,22 +1,20 @@
-#pragma once
+#include <iostream>
 #include <vector>
-#include "Item.cpp"
+
+using namespace std;
 
 class Menu
 {
 private:
-    vector<Item> items; 
+    string BreakFast = "Englezia Style \n";
+    string Lunch = "Zeama UTM \n";
+    string Dinner = "Pasta Submivdodo\n";
+
 public:
-    Menu(){
-        Item Breakfast = Item(50, "Mic de jun ca la Englezia", 5);
-        Item Lunch = Item(30, "Zama ca la UTM", 5);
-        Item Dinner = Item(35, "Pasta ca la Italiano", 6);
-        items.push_back(Breakfast);
-        items.push_back(Lunch);
-        items.push_back(Dinner);
-    };
+    Menu(){};
 
+    void showMenu()
+    {
+        cout << this->BreakFast << this->Lunch << this->Dinner << endl;
+    }
 };
-
-
-
